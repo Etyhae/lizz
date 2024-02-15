@@ -1,0 +1,73 @@
+header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  text-align: center;
+  margin-top: 2rem;
+  height: 0.01rem;
+  background-color: gray;
+}
+
+/* Стилизация полосы прокрутки */
+::-webkit-scrollbar {
+  width: 0.4rem; /* Ширина полосы прокрутки */
+  height: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6d28d9; /* Цвет ползунка */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6d28d9; /* Цвет ползунка при наведении курсора */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee; /* Цвет фона полосы прокрутки */
+}
+.work-ex {
+  position: relative;
+}
+.work-ex::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgb(128, 128, 128, 0.5);
+  height: 100%;
+  width: 70%;
+  left: 0;
+  top: 0;
+  clip-path: polygon(0 0, 55% 0, 100% 100%, 0% 100%);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 450ms;
+  backdrop-filter: blur(8px);
+}
+.work-ex:hover::after {
+  transform: translateX(-100%);
+}
+
+.asyncImage {
+  background-image: url(/img/bg_placeholder.png);
+}
+
+::selection {
+  background: #ffb7b7; /* Safari */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Firefox */
+}
+
+.leftRise {
+  transform: translateX(-100%);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.bottomRise {
+  transform: translateY(48rem);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
