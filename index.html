@@ -1,126 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lizz</title>
-    <meta name="description" content="lizz | 3D character designer | portfolio" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="./js/scroll.js"></script>
-    <script defer src="./js/lazyload.js"></script>
-    <script defer src="./js/app.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lizz</title>
+  <meta name="description" content="lizz | 3D character designer | portfolio" />
 
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="preload" href="./fonts/NeueMetana-Bold.otf" as="font" type="font/otf" crossorigin />
-    <style>
-      @font-face {
-        font-family: "NeueMetanaBold";
-        src: url("./fonts/NeueMetana-Bold.otf") format("opentype");
-        font-display: swap;
-      }
-      @font-face {
-        font-family: "NeueMetana";
-        src: url("./fonts/NeueMetana-Regular.otf") format("opentype");
-        font-display: swap;
-      }
-    </style>
-  </head>
-  <body class="bg-black min-h-screen box-border m-0 p-0 relative">
-    <header class="z-50 w-screen h-16 px-4 pt-6 pb-2 flex flex-row justify-between fixed bg-black">
-      <a href="#about" class="font-bold text-slate-400" style="font-family: NeueMetanaBold">izdemonk</a>
-      <div
-        class="sm:flex flex-row justify-between text-white md:gap-x-16 gap-x-8 text-sm font-light hidden"
-        style="font-family: NeueMetana"
-      >
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#skills">My skills</a>
-        <a href="#contact">Contact</a>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="./js/scroll.js"></script>
+  <script defer src="./js/lazyload.js"></script>
+  <script defer src="./js/app.js"></script>
+
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="preload" href="./fonts/NeueMetana-Bold.otf" as="font" type="font/otf" crossorigin />
+  <style>
+    @font-face {
+      font-family: "NeueMetanaBold";
+      src: url("./fonts/NeueMetana-Bold.otf") format("opentype");
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "NeueMetana";
+      src: url("./fonts/NeueMetana-Regular.otf") format("opentype");
+      font-display: swap;
+    }
+  </style>
+</head>
+
+<body class="bg-black min-h-screen box-border m-0 p-0 relative">
+  <header class="z-50 w-screen h-16 px-4 pt-6 pb-2 flex flex-row justify-between fixed bg-black">
+    <a href="#about" class="font-bold text-slate-400" style="font-family: NeueMetanaBold">izdemonk</a>
+    <div class="sm:flex flex-row justify-between text-white md:gap-x-16 gap-x-8 text-sm font-light hidden"
+      style="font-family: NeueMetana">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#skills">My skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="flex flex-row gap-x-4">
+      <a href="" target="_blank">
+        <img class="" src="./img/icons/behance-fill.svg" width="24" height="24" alt="behance" />
+      </a>
+      <a href="" target="_blank">
+        <img class="" src="./img/icons/artstation.svg" width="24" height="24" alt="artstation" />
+      </a>
+      <a href="" target="_blank">
+        <img class="" src="./img/icons/instagram.svg" width="24" height="24" alt="instagram" />
+      </a>
+    </div>
+  </header>
+
+  <main class="flex py-16 flex-col px-4">
+    <section id="about"
+      class="flex flex-col justify-center sm:justify-around items-center py-5 h-full xl:h-screen gap-12 sm:gap-8">
+      <h1
+        class="leftRise duration-500 uppercase text-white tracking-tighter text-left self-start text-[2.5rem] leading-none sm:text-6xl md:text-7xl lg:text-[4.2rem] xl:text-[5rem] 2xl:text-[6.9rem] w-full"
+        style="font-family: NeueMetanaBold">
+        Hey! I'm Liza, <br />
+        a 3d character artist. <br />
+        I'm crazy about <br />
+        sculpting and <br />
+        modeling characters!
+      </h1>
+      <div class="bottomRise duration-700 flex flex-row justify-between items-center text-white gap-16"
+        style="font-family: NeueMetana">
+        <p>
+          To contact me, <br />
+          click here
+        </p>
+        <button class="bg-violet-700 leading-8 py-4 px-2 text-xl sm:text-3xl">contact with me</button>
       </div>
-      <div class="flex flex-row gap-x-4">
-        <a href="" target="_blank">
-          <img class="" src="./img/icons/behance-fill.svg" width="24" height="24" alt="behance" />
-        </a>
-        <a href="" target="_blank">
-          <img class="" src="./img/icons/artstation.svg" width="24" height="24" alt="artstation" />
-        </a>
-        <a href="" target="_blank">
-          <img class="" src="./img/icons/instagram.svg" width="24" height="24" alt="instagram" />
-        </a>
+    </section>
+    <section id="portfolio"
+      class="bottomRise duration-1000 flex flex-col justify-top items-center py-8 min-h-screen h-full">
+      <div class="flex flex-row justify-between w-full text-white" style="font-family: NeueMetana">
+        <h1 class="text-3xl sm:text-5xl">Portfolio</h1>
+        <p>
+          My best <br />
+          works
+        </p>
       </div>
-    </header>
+      <div class="flex flex-col gap-6 w-full my-12">
+        <div class="pw asyncImage w-full h-72 bg-white work-ex overflow-hidden bg-center bg-contain"
+          data-src="./img/work-1.webp"></div>
+        <div class="pw asyncImage w-full h-72 bg-white work-ex overflow-hidden bg-center bg-contain"
+          data-src="./img/work-2.webp"></div>
+        <div class="pw asyncImage w-full h-72 bg-white work-ex overflow-hidden bg-center bg-contain"
+          data-src="./img/work-3.webp"></div>
+        <div class="pw asyncImage w-full h-72 bg-white work-ex overflow-hidden bg-center bg-contain"
+          data-src="./img/work-4.webp"></div>
+      </div>
+    </section>
+  </main>
+</body>
 
-    <main class="flex py-16 flex-col px-4">
-      <section
-        id="about"
-        class="flex flex-col justify-center sm:justify-around items-center py-5 h-full xl:h-screen gap-12 sm:gap-16 xl:gap-0"
-      >
-        <h1
-          class="leftRise duration-500 uppercase text-white tracking-tighter text-left self-start text-[2.5rem] leading-none sm:text-6xl md:text-7xl lg:text-[4.2rem] xl:text-[5rem] 2xl:text-[7rem] w-full"
-          style="font-family: NeueMetanaBold"
-        >
-          Hey! I'm Liza, <br />
-          a 3d character artist. <br />
-          I'm crazy about <br />
-          sculpting and <br />
-          modeling characters!
-        </h1>
-        <div
-          class="bottomRise duration-700 flex flex-row justify-between items-center text-white gap-16"
-          style="font-family: NeueMetana"
-        >
-          <p>
-            To contact me, <br />
-            click here
-          </p>
-          <button class="bg-violet-700 leading-8 py-4 px-2 text-xl sm:text-3xl">contact with me</button>
-        </div>
-      </section>
-      <section id="portfolio" class="flex flex-col justify-top items-center py-8 min-h-screen h-full">
-        <div class="flex flex-row justify-between w-full text-white" style="font-family: NeueMetana">
-          <h1 class="text-3xl sm:text-5xl">Portfolio</h1>
-          <p>
-            My best <br />
-            works
-          </p>
-        </div>
-        <div class="flex flex-col gap-6 w-full my-12">
-          <div
-            class="pw asyncImage w-full h-72 bg-white work-ex overflow-hidden bg-center bg-contain"
-            data-src="/img/work-1.webp"
-          ></div>
-          <div
-            class="pw asyncImage w-full h-72 bg-white work-ex overflow-hidden bg-center bg-contain"
-            data-src="/img/work-2.webp"
-          ></div>
-          <div
-            class="pw asyncImage w-full h-72 bg-white work-ex overflow-hidden bg-center bg-contain"
-            data-src="/img/work-3.webp"
-          ></div>
-          <div
-            class="pw asyncImage w-full h-72 bg-white work-ex overflow-hidden bg-center bg-contain"
-            data-src="/img/work-4.webp"
-          ></div>
-        </div>
-        <!-- <div class="columns-2 gap-3 my-12">
-          <div class="inline-block overflow-hidden">
-            <img src="./img/work-3.png" class="w-full h-full hover:scale-110 ease-in duration-300" />
-          </div>
-          <div class="inline-block overflow-hidden">
-            <img src="./img/work-1.png" class="w-full h-full hover:scale-110 ease-in duration-300" />
-          </div>
-          <div class="inline-block overflow-hidden">
-            <img src="./img/work-2.png" class="w-full h-full hover:scale-110 ease-in duration-300" />
-          </div>
-          <div class="inline-block overflow-hidden">
-            <img src="./img/work-4.png" class="w-full h-full hover:scale-110 ease-in duration-300" />
-          </div>
-          <div class="inline-block overflow-hidden">
-            <img src="./img/work-5.png" class="w-full h-full hover:scale-110 ease-in duration-300" />
-          </div>
-        </div> -->
-      </section>
-    </main>
-  </body>
 </html>

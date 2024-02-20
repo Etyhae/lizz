@@ -13,24 +13,30 @@ header::after {
 
 /* Стилизация полосы прокрутки */
 ::-webkit-scrollbar {
-  width: 0.4rem; /* Ширина полосы прокрутки */
+  width: 0.4rem;
+  /* Ширина полосы прокрутки */
   height: 0.4rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #6d28d9; /* Цвет ползунка */
+  background-color: #6d28d9;
+  /* Цвет ползунка */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #6d28d9; /* Цвет ползунка при наведении курсора */
+  background-color: #6d28d9;
+  /* Цвет ползунка при наведении курсора */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #eee; /* Цвет фона полосы прокрутки */
+  background-color: #eee;
+  /* Цвет фона полосы прокрутки */
 }
+
 .work-ex {
   position: relative;
 }
+
 .work-ex::after {
   content: "";
   display: block;
@@ -46,6 +52,7 @@ header::after {
   transition-duration: 450ms;
   backdrop-filter: blur(8px);
 }
+
 .work-ex:hover::after {
   transform: translateX(-100%);
 }
@@ -55,10 +62,23 @@ header::after {
 }
 
 ::selection {
-  background: #ffb7b7; /* Safari */
+  background: #ffb7b7;
+  /* Safari */
 }
+
 ::-moz-selection {
-  background: #ffb7b7; /* Firefox */
+  background: #ffb7b7;
+  /* Firefox */
+}
+
+@keyframes fadeIn-bottom {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .leftRise {
@@ -66,8 +86,10 @@ header::after {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
+
 .bottomRise {
   transform: translateY(48rem);
+  animation: fadeIn-bottom;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }

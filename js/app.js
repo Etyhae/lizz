@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const leftRise = document.querySelector(".leftRise");
-  const bottomRise = document.querySelector(".bottomRise");
+  const leftRise = document.querySelectorAll(".leftRise");
+  const bottomRise = document.querySelectorAll(".bottomRise");
 
   setTimeout(() => {
-    leftRise.classList.remove("leftRise");
-    bottomRise.classList.remove("bottomRise");
+    leftRise.forEach(element => {
+      element.classList.remove("leftRise")
+    });
+    bottomRise.forEach(element => {
+      element.classList.remove("bottomRise")
+    });
   }, 300);
 });
